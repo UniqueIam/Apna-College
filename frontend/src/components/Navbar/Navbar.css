@@ -1,0 +1,55 @@
+.navbar{
+    height: 13vh;
+    width: 100vw;
+    background-color: #f8f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 10px;
+}
+.left-navbar{
+    display: flex;
+    flex-direction: column;
+}
+.left-navbar h2{
+    font-size: 28px;
+    font-family: sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    
+}
+#apna{
+    position: relative;
+    top: 15px;
+    left: 28px;
+    color: #121112;
+}
+#college{
+    color: orange;
+}
+.right-navbar{
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 800;
+    align-items: center;
+    padding-top: 5px;
+}
+#new-sigma{
+    border: none;
+    font-size: 20px;
+    background-color: rgb(86, 86, 202);
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#signup{
+    border: 2px solid rgb(86, 86, 202);
+    color: rgb(86, 86, 202);
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 17px;
+    cursor: pointer;
+}
