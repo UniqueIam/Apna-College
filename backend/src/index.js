@@ -1,12 +1,24 @@
 import express from 'express'
+import dotenv from 'dotenv'
+import createConnection from './db/db.js';
 
 const app = express();
-const port = 8000;
 
+dotenv.config({
+    path:'./.env'
+});
+
+createConnection()
+.then(()=>{
+    console.log("Connection successfully")
+})
+.catch(()=>{
+    console.log("Connection failed")
+})
 app.get('/',(req,res)=>{
     res.send('Hii');
 })
 
-app.listen(port,()=>{
-    console.log(`server is running at port ${port}`);
+app.listen(process.env.PORT,()=>{
+    console.log(`server is running at port ${process.env.PORT}`);
 })
