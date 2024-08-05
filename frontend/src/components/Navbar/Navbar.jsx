@@ -3,14 +3,18 @@ import './Navbar.css';
 import Signup from '../Signup/Signup';
 
 const Navbar = () => {
-  const [showSignup, setShowSignup] = useState(false);
+  const [showModal, setShowModal] = useState({ show: false, isLogin: false });
 
   const handleSignup = () => {
-    setShowSignup(true);
+    setShowModal({ show: true, isLogin: false });
   };
 
-  const closeSignup = () => {
-    setShowSignup(false);
+  const handleLogin = () => {
+    setShowModal({ show: true, isLogin: true });
+  };
+
+  const closeModal = () => {
+    setShowModal({ show: false, isLogin: false });
   };
 
   return (
@@ -23,7 +27,7 @@ const Navbar = () => {
           <button id='new-sigma' style={{ height: '40px', width: '170px' }}>New sigma 4.0</button>
           <p>Home</p>
           <p>New Courses</p>
-          <p>Log in</p>
+          <p onClick={handleLogin} style={{cursor:'pointer'}}>Log in</p>
           <button
             id='signup'
             onClick={handleSignup}
@@ -33,7 +37,8 @@ const Navbar = () => {
           </button>
         </div>
       </div>
-      {showSignup && <Signup closeSignup={closeSignup} />}
+
+      {showModal.show && <Signup closeModal={closeModal} isLogin={showModal.isLogin} />}
     </>
   );
 };

@@ -13,7 +13,6 @@
   
   .signup-content {
     background-color: black;
-    height: 95vh;
     width: 33vw;
     padding: 20px;
     border-radius: 10px;
@@ -71,7 +70,7 @@
   }
   
   .signup-content form button {
-    width: 100%; 
+    width: 85%; 
     height: 35px;
     background-color: #4f72d3;
     color: white;
@@ -88,5 +87,9 @@
   #sign-in{
     font-size: 18px;
     font-family: sans-serif;
+    cursor: pointer;
     color: #4f72d3;
+  }
+  #sign-in:hover{
+    color: #6b84c9;
   }
