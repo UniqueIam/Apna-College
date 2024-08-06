@@ -5,6 +5,8 @@ import jwt from 'jsonwebToken';
 
 const registerUser = async (req,res) =>{
 
+    const secret = process.env.JWT_SECRET
+
     const createToken = (user) =>{
         const payload = {id: user._id};
         const secret = process.env.JWT_SECRET;
@@ -78,4 +80,32 @@ const registerUser = async (req,res) =>{
     }
 }
 
-export {registerUser}
+const loginUser = async (req,res) =>{
+    const {email,password} = req.body;
+
+    if(!email || !password){
+        res.status(400).json({
+            success:false,
+            message:"All fields are required"
+        })
+    }
+   const existedUser = await User.find({email});
+   if(!existedUser){
+     return res.status(400).json({
+        success:false,
+        message:"User didn't exist"
+     })
+   }
+   const checkPassword = User.isPassword(token,secret);
+    if(!checkPassword){
+        return res.json({
+            success:false,
+            message:"Password is incorrect"
+        })
+    }
+
+   
+
+}
+
+export {registerUser,loginUser }
