@@ -142,8 +142,10 @@
 
     .explore-button {
         margin-top: 30px;
+        height: 50px;
         font-size: 1.5vw;
         padding: 12px 24px;
+        border-radius: 5px;
     }
 }
 
@@ -163,6 +165,7 @@
 
     .left-header-text {
         font-size: 5vw;
+        line-height: 90px;
     }
 
     .left-header-text p {
@@ -179,31 +182,39 @@
         margin-top: 20px;
         font-size: 2vw;
         padding: 14px 28px;
+        border-radius: 5px;
     }
 }
 
 @media (max-width: 480px) {
     .left-header-text {
-        font-size: 6vw;
+        font-size: 8vw;
     }
 
     .left-header-text p {
-        font-size: 6vw;
-        line-height: 50px;
+        font-size: 8vw;
+        /* line-height: -50px; */
     }
 
     .left-header-running-text {
         font-size: 2.2rem;
         line-height: 2.2rem;
     }
+    .left-header-running-text span{
+        font-size: 1.2rem;
+    }
+    .left-header-running-text .react-simple-typewriter-cursor {
+        font-size: 1rem; 
+        line-height: 1rem; 
+    }
     .right-header{
-        height: 60vh;
+        height: 50vh;
         width: 60vw;
-        margin-top: -13vh;
+        margin-top: -2vh;
     }
 
     .explore-button {
-        font-size: 2.5vw;
+        font-size: 3.5vw;
         padding: 16px 32px;
     }
 }

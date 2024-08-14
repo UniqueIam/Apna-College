@@ -6,7 +6,7 @@ import { assets } from '../../assets/assets';
 
 const Header = () => {
   const [typeEffect] = useTypewriter({
-    words: ['C++', 'Alpha-DSA', 'Sigma-Web Development'],
+    words: ['C++', 'Alpha-DSA', 'Delta-Web Development','Sigma-DSA+Web Development'],
     loop: {},
     typeSpeed: 100,
     deleteSpeed: 100,
@@ -32,6 +32,7 @@ const Header = () => {
         <img src={assets.avatar} style={{backgroundImage:'cover'}} />
       </div>
     </div>
+    
   );
 };
 
