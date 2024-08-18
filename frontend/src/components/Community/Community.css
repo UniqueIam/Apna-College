@@ -1,13 +1,12 @@
 .community{
     /* background-color: rgb(1, 1, 34); */
+    background-color: #ffffff;
+    margin-top: 98px;
     width: 100%;
-    height: 40vh;
-    position: relative;
-    top: 17vh;
+    height: 100vh;
 }
 .learners{
     background-color: rgb(20, 123, 207);
-    position: absolute;
     width: 100%;
     height: 36vh;
     display: flex;
@@ -27,9 +26,10 @@
     font-weight: 700;
 }
 .community-description{
-    position: absolute;
+    /* position: absolute; */
+    margin-top: 100px;
     height: 35vh;
-    top:50vh;
+    /* top:50vh; */
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -92,6 +92,7 @@
     border-top-right-radius: 12rem;
     overflow: hidden; 
     position: relative;
+    z-index: -1;
 }
   
 .right-header img {
