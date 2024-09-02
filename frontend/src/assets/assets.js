@@ -1,4 +1,4 @@
-import avatar from './avatar.jpeg'
+import coverImage from './coverImage.jpg'
 import airtel from './airtel-logo.jpg'
 import amazon from './amazon.png'
 import dell from './Dell-logo.png'
@@ -19,7 +19,7 @@ import sales from './Salesforce-logo.webp'
 import samsung from './samsung-logo.png'
 
 export const assets ={
-    avatar
+    coverImage
 }
 
 export const companies_assets ={

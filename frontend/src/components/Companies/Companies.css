@@ -1,7 +1,7 @@
 .companies {
     background-color: #f8f8fd;
     width: 100vw;
-    height: 100vh;
+    height: auto;
   }
   
   .companies p {

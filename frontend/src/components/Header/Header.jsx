@@ -4,6 +4,7 @@ import './Header.css';
 import { FaGreaterThan } from 'react-icons/fa6';
 import { assets } from '../../assets/assets';
 
+
 const Header = () => {
   const [typeEffect] = useTypewriter({
     words: ['C++', 'Alpha-DSA', 'Delta-Web Development','Sigma-DSA+Web Development'],
@@ -29,7 +30,7 @@ const Header = () => {
         </button>
       </div>
       <div className='right-header'>
-        <img src={assets.avatar} style={{backgroundImage:'cover'}} />
+        <img src={assets.coverImage} style={{backgroundImage:'cover'}} />
       </div>
     </div>
     
